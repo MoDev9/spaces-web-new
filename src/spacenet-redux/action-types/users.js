@@ -1,0 +1,61 @@
+import keyMirror from 'spacenet-redux/utils/key_mirror';
+
+export default keyMirror({
+  CREATE_USER_REQUEST: null,
+  CREATE_USER_SUCCESS: null,
+  CREATE_USER_FAILURE: null,
+
+  GET_USER_REQUEST: null,
+  GET_USER_SUCCESS: null,
+  GET_USER_FAILURE: null,
+
+  LOGIN_REQUEST: null,
+  LOGIN_SUCCESS: null,
+  LOGIN_FAILURE: null,
+
+  MY_FRIENDS_REQUEST: null,
+  MY_FRIENDS_SUCCESS: null,
+  MY_FRIENDS_FAILURE: null,
+
+  ADD_FRIENDS_REQUEST: null,
+  ADD_FRIENDS_SUCCESS: null,
+  ADD_FRIENDS_FAILURE: null,
+
+  MY_ROOMS_REQUEST: null,
+  MY_ROOMS_SUCCESS: null,
+  MY_ROOMS_FAILURE: null,
+
+  CHANGE_ROOM_REQUEST: null,  
+
+  RECEIVED_MY_ROOM_MEMBERS: null,
+
+  LOGOUT_REQUEST: null,
+  LOGOUT_SUCCESS: null,
+  LOGOUT_FAILURE: null,
+
+  RESET_LOGOUT_STATE: null,
+
+  RECEIVED_ME: null,
+  RECEIVED_ROOMS_LIST: null,
+  RECEIVED_ROOM: null,
+  RECEIVED_FRIENDS_LIST: null,
+  RECEIVED_FRIEND: null,
+  RECEIVED_PROFILE: null,
+  RECEIVED_PROFILES: null,
+  RECEIVED_PROFILES_LIST: null,
+});
+
+/* export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_REQUEST = 'LOGIN_REQUEST';
+export const LOGIN_FAILURE = 'LOGIN_FAILURE';
+
+export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
+export const LOGOUT_REQUEST = 'LOGOUT_REQUEST';
+export const LOGOUT_FAILURE = 'LOGOUT_FAILURE';
+
+export const CREATE_USER_REQUEST = 'CREATE_USER_REQUEST'
+export const CREATE_USER_SUCCESS = 'CREATE_USER_SUCCESS'
+export const CREATE_USER_FAILURE = 'CREATE_USER_FAILURE'
+
+export const REGISTER = 'REGISTER_SUCCESS';
+export const FETCH_CHANNELS = 'FETCH_CHANNELS'; */

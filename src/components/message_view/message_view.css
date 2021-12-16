@@ -1,0 +1,59 @@
+.sn_MessageView_Wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sn_MessageView {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin-right: 110px;
+  /* padding-top: 1px;
+  padding-bottom: 3px; */
+  line-height: 2.2rem;
+  align-items: center;
+}
+
+.sn_MessageView:hover {
+  background-color: rgba(63, 70, 78, 0.2);
+  border-radius: 6px;
+}
+
+.sn_MessageView_Header_avatar {
+  margin-right: 12px;
+  width: 40px;
+}
+
+.sn_MessageView_time {
+  font-size: 12px;
+  color: var(--text-muted);
+  word-wrap: normal !important;
+}
+
+.sn_Time_Wrapper {
+  width: 40px;
+  margin-right: 12px;
+}
+
+.sn_MessageView_content {
+  color: #acaeb1;
+  font-size: 1.4rem;
+}
+
+.sn_MessageView_Header_name {
+  font-size: 14px;
+}
+
+.sn_MessageView_Header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* margin-bottom: 6px; */
+}
+
+.sn_MessageView_Header span {
+  /* color: rgb(47, 47, 179); */
+  color: #fff;
+  font-weight: 600;
+}

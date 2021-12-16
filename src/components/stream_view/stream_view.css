@@ -1,0 +1,59 @@
+.streamView_root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+/* Text in middle */
+.date-message-view span {
+  display: flex;
+  flex-direction: row;
+  color: var(--text-muted);
+}
+
+.date-message-view span:before, 
+.date-message-view span:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.336);
+  margin: auto;
+}
+/* Text in middle */
+.sn_StreamView_MessageList {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.streamView_msg {
+  /* height: 100%; */
+  display: flex;
+  flex-direction: row;
+  /* margin-top: auto; */
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding: 8px 16px;
+}
+
+.sv_MsgComposer_Wrapper {
+  box-sizing: border-box;
+  /* align-self: flex-end; */
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 16px;
+}
+
+.sv_MsgComposer {
+  width: 100%;
+  background: none;
+  background-color: transparent;
+  border: none;
+  color: var(--text-muted);
+}
+
+.sv_MsgComposer_actions {
+  display: flex;
+  flex-direction: row;
+}
