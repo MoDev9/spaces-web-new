@@ -1,5 +1,5 @@
 import React from 'react';
-import {Router, Route} from 'react-router';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import store from 'stores/redux_store'
 import history from 'utils/history';
@@ -13,7 +13,7 @@ window.store = store;
 const App = () => (
   <Provider store={store}>
     <Router history={history}>
-      <Route path='/' component={Root}/>
+      <Root />
     </Router>
   </Provider>
 );

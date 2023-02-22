@@ -240,7 +240,7 @@ export default class Home extends React.Component {
                     <img className='avatar-3uk item-avatar' width='35px' src={user_avatar}/>
                     <div class='content-3gh'>
                       <div class='nameAndDecorators'>
-                        <div class='name-Ughj'>Mohamed_Hello</div>
+                        <div class='name-Ughj'></div>
                       </div>
                     </div>
                   </div>

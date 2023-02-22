@@ -1,7 +1,8 @@
 import React from 'react';
-import {Redirect, Route, Switch} from 'react-router';
+import {Navigate, Route, Routes} from 'react-router-dom';
 
 import Home from 'components/home';
+import { TestComp } from 'components/test_component';
 import StreamController from 'components/stream_layout/stream_controller';
 
 const Simple = (props) => (
@@ -17,14 +18,15 @@ export default class NeedsSpace extends React.Component {
 
   render() {
     return (
-      <Switch>
+      <Routes>
         <Route 
             path={'/streams/@me/:id'}
             render={(props) => <Home {...props}/>}
         />
         <Route 
             path={'/streams/@me'}
-            component={Home}
+            component={TestComp}
+            // component={Home}
         />
         <Route 
           path='/streams/:space'
@@ -34,11 +36,11 @@ export default class NeedsSpace extends React.Component {
             />
           )}
         />
-
-        <Redirect
+        <Navigate replace to='/streams/@me'/>
+        {/* <Redirect
           to='/streams/@me'
-          />
-      </Switch>
+          /> */}
+      </Routes>
     );
   }
 }

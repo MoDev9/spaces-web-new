@@ -2,6 +2,7 @@ import React from 'react';
 import * as Utils from 'utils/utils'
 import browserHistory from  'utils/history';
 import {Errors} from 'spacenet-redux/constants'
+import { Link } from 'react-router-dom';
 
 import './login.css'
 
@@ -138,9 +139,9 @@ export default class Login extends React.Component {
                 onChange={this.handleChangePassword}
                 spellCheck='false'
                 />
-              <a class="forgot-password" href="/forgot_password">Forgot password?</a>
+              <Link class="forgot-password" to="/forgot_password">Forgot password?</Link>
               <button class="btn btn-primary form-submit" type="submit">Login</button>
-              <span>New to SpaceNet? <a class="forgot-password" href="/register">Sign up</a></span>
+              <span>New to SpaceNet? <Link class="forgot-password" to="/register">Sign up</Link></span>
             </form>
           </div>
 
