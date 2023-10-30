@@ -1,3 +1,3 @@
-# Organized Team Chat and Collaborative App
+# Spaces Desktop Client
 
-This project was built using React.
+Open source organized team chat and collaborative App. This project was built using React.
